@@ -27,7 +27,7 @@ Route::prefix('v1')->group(function () {
     Route::get('/veiculos/marcas-validas', [VeiculoController::class, 'marcasValidas']);
 
     Route::patch('/veiculos/{id}', [VeiculoController::class, 'patch']);
-    
+
     Route::apiResource('veiculos', VeiculoController::class);
 });
 
