@@ -28,8 +28,9 @@ No arquivo .env, preencha os dados do Banco criado:
 - `DB_USERNAME=root`
 - `DB_PASSWORD=sua_senha`
 
-Execute o comando para migrar as tabelas do projeto:
-- `$ php artisan migrate –seed`
+Execute o comando para migrar as tabelas do projeto e os seeders criados de exemplo:
+- `$ php artisan migrate`
+- `$ php artisan db:seed --class=VeiculoSeeder`
 
 ## Startar o Sistema
 Apois todas as configurações acima, inicie o sistema com o comando:
